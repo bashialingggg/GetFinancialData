@@ -11,7 +11,7 @@ import cx_Oracle,time,datetime
 Cur=['阿联酋迪拉姆','澳大利亚元','巴西里亚尔','加拿大元','瑞士法郎','丹麦克朗','欧元',
           '英镑','港币','印尼卢比','印度卢比','日元','韩国元','澳门元','林吉特','挪威克朗','新西兰元','菲律宾比索',
           '卢布','沙特里亚尔','瑞典克朗','新加坡元','泰国铢','土耳其里拉','新台币','美元']
-conn = cx_Oracle.connect('datacenter/cpic123456@10.39.0.86/xmcx1')
+conn = cx_Oracle.connect('')#连接oracle数据库
 s = requests.session()
 s.keep_alive = False #关闭多余的连接
 def Download(Currency,page): #Currency 币种，url 中行汇率牌价网址
